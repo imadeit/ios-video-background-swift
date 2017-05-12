@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Load the video from the app bundle.
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("video", withExtension: "mov")!
+        let videoURL: URL = Bundle.main.url(forResource: "video", withExtension: "mov")!
         
-        player = AVPlayer(URL: videoURL)
-        player?.actionAtItemEnd = .None
-        player?.muted = true
+        player = AVPlayer(url: videoURL)
+        player?.actionAtItemEnd = .none
+        player?.isMuted = true
         
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
@@ -35,14 +35,14 @@ class ViewController: UIViewController {
         player?.play()
             
         //loop video
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "loopVideo",
-            name: AVPlayerItemDidPlayToEndTimeNotification,
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(ViewController.loopVideo),
+            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
             object: nil)
      }
     
     func loopVideo() {
-        player?.seekToTime(kCMTimeZero)
+        player?.seek(to: kCMTimeZero)
         player?.play()
     }
 

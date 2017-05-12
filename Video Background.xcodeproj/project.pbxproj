@@ -165,9 +165,12 @@
 				TargetAttributes = {
 					266FA7EF1AB1361500CF73E1 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = F2SCXDG35A;
+						LastSwiftMigration = 0830;
 					};
 					266FA8041AB1361500CF73E1 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = 266FA7EF1AB1361500CF73E1;
 					};
 				};
@@ -341,9 +344,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F2SCXDG35A;
 				INFOPLIST_FILE = "Video Background/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leon.app.sample.Video-Background";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -351,9 +357,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F2SCXDG35A;
 				INFOPLIST_FILE = "Video Background/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leon.app.sample.Video-Background";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -372,6 +381,7 @@
 				INFOPLIST_FILE = "Video BackgroundTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Video Background.app/Video Background";
 			};
 			name = Debug;
@@ -387,6 +397,7 @@
 				INFOPLIST_FILE = "Video BackgroundTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Video Background.app/Video Background";
 			};
 			name = Release;
